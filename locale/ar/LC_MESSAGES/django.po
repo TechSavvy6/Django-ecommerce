@@ -1,0 +1,1274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-14 08:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: core/views.py:14 shopaza/settings.py:19
+msgid "Shopaza"
+msgstr "شوبازا"
+
+#: core/views.py:43 templates/includes/navbar.html:69
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: core/views.py:45 shop/views.py:370 templates/core/contact.html:17
+msgid ""
+"Give us a call or drop by anytime, we endeavour to answer all enquiries "
+"within 24 hours on business days. We will be happy to answer your questions."
+msgstr ""
+"اتصل بنا أو أطلب الاتصال بنا في أي وقت ، ونسعى للرد على جميع الاستفسارات في "
+"غضون 24 ساعة في أيام العمل. سنكون سعداء للإجابة على أسئلتك."
+
+#: shop/forms.py:8 shop/forms.py:10
+#: templates/shop/order_summary_snippet.html:24
+msgid "Coupon Code"
+msgstr "رمز الكوبون"
+
+#: shop/models.py:31
+msgid "Category"
+msgstr "فئة"
+
+#: shop/models.py:32 templates/core/index.html:51
+msgid "Categories"
+msgstr "فئات"
+
+#: shop/models.py:60 templates/shop/cart.html:14
+msgid "Item"
+msgstr "غرض"
+
+#: shop/models.py:61
+msgid "Items"
+msgstr "العناصر"
+
+#: shop/models.py:103
+msgid "ItemImage"
+msgstr "صورة البند"
+
+#: shop/models.py:104
+msgid "ItemImages"
+msgstr "صور البند"
+
+#: shop/models.py:117
+msgid "OrderItem"
+msgstr "قائمة الطلبات"
+
+#: shop/models.py:118
+msgid "OrderItems"
+msgstr "طلب بضاعة"
+
+#: shop/models.py:156
+msgid "Order"
+msgstr "الحجز"
+
+#: shop/models.py:157
+msgid "Orders"
+msgstr "الحجوزات"
+
+#: shop/views.py:129
+msgid "This item is out of stock."
+msgstr "هذا العنصر غير متوفر في المخزون"
+
+#: shop/views.py:148 shop/views.py:221
+msgid "This item quantity was updated."
+msgstr "تم تحديث كمية هذا العنصر"
+
+#: shop/views.py:152 shop/views.py:159
+msgid "This item was added to your cart."
+msgstr "تمت إضافة هذا العنصر إلى عربة التسوق الخاصة بك"
+
+#: shop/views.py:188
+msgid "This item was removed from your cart."
+msgstr "تمت إزالة هذا العنصر من عربة التسوق الخاصة بك"
+
+#: shop/views.py:191 shop/views.py:224
+msgid "This item was not in your cart"
+msgstr "هذا البند لم يكن في عربة التسوق الخاصة بك"
+
+#: shop/views.py:194 shop/views.py:227 shop/views.py:312 shop/views.py:341
+msgid "You do not have an active order"
+msgstr "ليس لديك حجز نشط"
+
+#: shop/views.py:234 templates/includes/navbar.html:30
+#: templates/shop/cart.html:9
+msgid "Cart"
+msgstr "عربة التسوق"
+
+#: shop/views.py:305 templates/shop/checkout.html:6
+msgid "Checkout"
+msgstr ""
+
+#: shop/views.py:328
+msgid "This coupon does not exist."
+msgstr "هذه القسيمة غير موجودة"
+
+#: shop/views.py:334
+msgid "Coupon Added Successfully."
+msgstr ""
+
+#: shop/views.py:337
+msgid "Coupon is expired."
+msgstr "تمت إضافة القسيمة بنجاح"
+
+#: shop/views.py:353
+msgid "Coupon Removed Successfully."
+msgstr "تمت إزالة القسيمة بنجاح"
+
+#: shop/views.py:356
+msgid "Error Occured"
+msgstr "حدث خطأ"
+
+#: shop/views.py:362 templates/shop/payment_successful.html:5
+msgid "Payment Successful"
+msgstr "تم الدفع بنجاح"
+
+#: shopaza/settings.py:20
+msgid ""
+"Now your reach to all your favorite entertainment and luxury items is just "
+"one touch apart."
+msgstr ""
+"يمكنك الآن الوصول إلى جميع وسائل الترفيه والعناصر الفاخرة المفضلة لديك بلمسة "
+"واحدة فقط"
+
+#: shopaza/settings.py:139
+msgid "English"
+msgstr "إنجليزي"
+
+#: shopaza/settings.py:140
+msgid "Arabic"
+msgstr "عربي"
+
+#: templates/account/account_inactive.html:5
+#: templates/account/account_inactive.html:9
+msgid "Account Inactive"
+msgstr "الحساب غير نشط"
+
+#: templates/account/account_inactive.html:11
+msgid "This account is inactive."
+msgstr "هذا الحساب غير نشط"
+
+#: templates/account/email.html:6
+msgid "Account"
+msgstr "الحساب"
+
+#: templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr "عناوين البريد الإلكتروني"
+
+#: templates/account/email.html:12
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "عناوين البريد الإلكتروني التالية مرتبطة بحسابك"
+
+#: templates/account/email.html:28
+msgid "Verified"
+msgstr "تم التحقق"
+
+#: templates/account/email.html:30
+msgid "Unverified"
+msgstr "لم يتم التحقق منه"
+
+#: templates/account/email.html:32
+msgid "Primary"
+msgstr "ابتدائي"
+
+#: templates/account/email.html:38
+msgid "Make Primary"
+msgstr "اتخذ الاولويه"
+
+#: templates/account/email.html:39
+msgid "Re-send Verification"
+msgstr "إعادة التحقق"
+
+#: templates/account/email.html:40 templates/socialaccount/connections.html:40
+msgid "Remove"
+msgstr "يزيل"
+
+#: templates/account/email.html:47
+msgid "Warning:"
+msgstr "تحذير"
+
+#: templates/account/email.html:48
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"ليس لديك حاليًا أي عنوان بريد إلكتروني تم إعداده. يجب عليك بالفعل إضافة عنوان "
+"بريد إلكتروني حتى تتمكن من تلقي الإشعارات وإعادة تعيين كلمة المرور الخاصة "
+"بك ، وما إلى ذلك"
+
+#: templates/account/email.html:54
+msgid "Add E-mail Address"
+msgstr "إضافة عنوان البريد الإلكتروني"
+
+#: templates/account/email.html:59
+msgid "Add E-mail"
+msgstr "أضف بريد إلكتروني"
+
+#: templates/account/email.html:69
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "هل تريد حقًا إزالة عنوان البريد الإلكتروني المحدد؟"
+
+#: templates/account/email/email_confirmation_message.html:6
+#, python-format
+msgid ""
+"\n"
+"<!DOCTYPE html>\n"
+"<html>\n"
+"\n"
+"<head>\n"
+"    <title></title>\n"
+"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /"
+">\n"
+"    <meta name=\"viewport\" content=\"width=device-width, initial-"
+"scale=1\">\n"
+"    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n"
+"    <style type=\"text/css\">\n"
+"        @media screen {\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: normal;\n"
+"                font-weight: 400;\n"
+"                src: local('Lato Regular'), local('Lato-Regular'), "
+"url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-"
+"xsNqO47m55DA.woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: normal;\n"
+"                font-weight: 700;\n"
+"                src: local('Lato Bold'), local('Lato-Bold'), url(https://"
+"fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4."
+"woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: italic;\n"
+"                font-weight: 400;\n"
+"                src: local('Lato Italic'), local('Lato-Italic'), url(https://"
+"fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A."
+"woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: italic;\n"
+"                font-weight: 700;\n"
+"                src: local('Lato Bold Italic'), local('Lato-BoldItalic'), "
+"url(https://fonts.gstatic.com/s/lato/v11/"
+"HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');\n"
+"            }\n"
+"        }\n"
+"\n"
+"        /* CLIENT-SPECIFIC STYLES */\n"
+"        body,\n"
+"        table,\n"
+"        td,\n"
+"        a {\n"
+"            -webkit-text-size-adjust: 100%%;\n"
+"            -ms-text-size-adjust: 100%%;\n"
+"        }\n"
+"\n"
+"        table,\n"
+"        td {\n"
+"            mso-table-lspace: 0pt;\n"
+"            mso-table-rspace: 0pt;\n"
+"        }\n"
+"\n"
+"        img {\n"
+"            -ms-interpolation-mode: bicubic;\n"
+"        }\n"
+"\n"
+"        /* RESET STYLES */\n"
+"        img {\n"
+"            border: 0;\n"
+"            height: auto;\n"
+"            line-height: 100%%;\n"
+"            outline: none;\n"
+"            text-decoration: none;\n"
+"        }\n"
+"\n"
+"        table {\n"
+"            border-collapse: collapse !important;\n"
+"        }\n"
+"\n"
+"        body {\n"
+"            height: 100%% !important;\n"
+"            margin: 0 !important;\n"
+"            padding: 0 !important;\n"
+"            width: 100%% !important;\n"
+"        }\n"
+"\n"
+"        /* iOS BLUE LINKS */\n"
+"        a[x-apple-data-detectors] {\n"
+"            color: inherit !important;\n"
+"            text-decoration: none !important;\n"
+"            font-size: inherit !important;\n"
+"            font-family: inherit !important;\n"
+"            font-weight: inherit !important;\n"
+"            line-height: inherit !important;\n"
+"        }\n"
+"\n"
+"        /* MOBILE STYLES */\n"
+"        @media screen and (max-width:600px) {\n"
+"            h1 {\n"
+"                font-size: 32px !important;\n"
+"                line-height: 32px !important;\n"
+"            }\n"
+"        }\n"
+"\n"
+"        /* ANDROID CENTER FIX */\n"
+"        div[style*=\"margin: 16px 0;\"] {\n"
+"            margin: 0 !important;\n"
+"        }\n"
+"    </style>\n"
+"</head>\n"
+"\n"
+"<body style=\"background-color: #f4f4f4; margin: 0 !important; padding: 0 !"
+"important;\">\n"
+"    <!-- HIDDEN PREHEADER TEXT -->\n"
+"    <div\n"
+"        style=\"display: none; font-size: 1px; color: #fefefe; line-height: "
+"1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-"
+"width: 0px; opacity: 0; overflow: hidden;\">\n"
+"        We're thrilled to have you here! Get ready to dive into your new "
+"account. </div>\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%%"
+"\">\n"
+"        <!-- LOGO -->\n"
+"        <tr>\n"
+"            <td bgcolor=\"#C4183C\" align=\"center\" style=\"padding: 0px "
+"10px 0px 10px;\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"100%%\" style=\"max-width: 600px;\">\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"center\" valign=\"top"
+"\"\n"
+"                            style=\"padding: 40px 20px 20px 20px; border-"
+"radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, "
+"Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; "
+"line-height: 48px;\">\n"
+"                            <h1 style=\"font-size: 48px; font-weight: 400; "
+"margin: 2;\">Welcome %(user_display)s!</h1>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </td>\n"
+"        </tr>\n"
+"        <tr>\n"
+"            <td bgcolor=\"#f4f4f4\" align=\"center\" style=\"padding: 0px "
+"10px 0px 10px;\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"100%%\" style=\"max-width: 600px;\">\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 20px 30px 40px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">You're receiving this e-"
+"mail because user %(user_display)s has given\n"
+"                                yours as an e-mail address to\n"
+"                                connect their\n"
+"                                account.</p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\">\n"
+"                            <table width=\"100%%\" border=\"0\" cellspacing="
+"\"0\" cellpadding=\"0\">\n"
+"                                <tr>\n"
+"                                    <td bgcolor=\"#ffffff\" align=\"center\" "
+"style=\"padding: 20px 30px 60px 30px;\">\n"
+"                                        <table border=\"0\" cellspacing="
+"\"0\" cellpadding=\"0\">\n"
+"                                            <tr>\n"
+"                                                <td align=\"center\" style="
+"\"border-radius: 3px;\" bgcolor=\"#C4183C\"><a\n"
+"                                                        href="
+"\"%(activate_url)s\" target=\"_blank\"\n"
+"                                                        style=\"font-size: "
+"20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-"
+"decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; "
+"border-radius: 2px; border: 1px solid #C4183C; display: inline-block;"
+"\">Confirm\n"
+"                                                        Account</a></td>\n"
+"                                            </tr>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr> <!-- COPY -->\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 0px 30px 0px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">If that doesn't work, "
+"copy and paste the following link in your\n"
+"                                browser:</p>\n"
+"                        </td>\n"
+"                    </tr> <!-- COPY -->\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 20px 30px 20px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\"><a href="
+"\"%(activate_url)s\" target=\"_blank\"\n"
+"                                    style=\"color: #C4183C;\">"
+"%(activate_url)s</a></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 0px 30px 40px 30px; border-"
+"radius: 0px 0px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, "
+"Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">From<br>%(site_name)s "
+"Team</p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </td>\n"
+"        </tr>\n"
+"    </table>\n"
+"</body>\n"
+"\n"
+"</html>\n"
+"\n"
+msgstr ""
+
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.html:2
+#, python-format
+msgid ""
+"\n"
+"<!DOCTYPE html>\n"
+"<html>\n"
+"\n"
+"<head>\n"
+"    <title></title>\n"
+"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /"
+">\n"
+"    <meta name=\"viewport\" content=\"width=device-width, initial-"
+"scale=1\">\n"
+"    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n"
+"    <style type=\"text/css\">\n"
+"        @media screen {\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: normal;\n"
+"                font-weight: 400;\n"
+"                src: local('Lato Regular'), local('Lato-Regular'), "
+"url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-"
+"xsNqO47m55DA.woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: normal;\n"
+"                font-weight: 700;\n"
+"                src: local('Lato Bold'), local('Lato-Bold'), url(https://"
+"fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4."
+"woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: italic;\n"
+"                font-weight: 400;\n"
+"                src: local('Lato Italic'), local('Lato-Italic'), url(https://"
+"fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A."
+"woff) format('woff');\n"
+"            }\n"
+"\n"
+"            @font-face {\n"
+"                font-family: 'Lato';\n"
+"                font-style: italic;\n"
+"                font-weight: 700;\n"
+"                src: local('Lato Bold Italic'), local('Lato-BoldItalic'), "
+"url(https://fonts.gstatic.com/s/lato/v11/"
+"HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');\n"
+"            }\n"
+"        }\n"
+"\n"
+"        /* CLIENT-SPECIFIC STYLES */\n"
+"        body,\n"
+"        table,\n"
+"        td,\n"
+"        a {\n"
+"            -webkit-text-size-adjust: 100%%;\n"
+"            -ms-text-size-adjust: 100%%;\n"
+"        }\n"
+"\n"
+"        table,\n"
+"        td {\n"
+"            mso-table-lspace: 0pt;\n"
+"            mso-table-rspace: 0pt;\n"
+"        }\n"
+"\n"
+"        img {\n"
+"            -ms-interpolation-mode: bicubic;\n"
+"        }\n"
+"\n"
+"        /* RESET STYLES */\n"
+"        img {\n"
+"            border: 0;\n"
+"            height: auto;\n"
+"            line-height: 100%%;\n"
+"            outline: none;\n"
+"            text-decoration: none;\n"
+"        }\n"
+"\n"
+"        table {\n"
+"            border-collapse: collapse !important;\n"
+"        }\n"
+"\n"
+"        body {\n"
+"            height: 100%% !important;\n"
+"            margin: 0 !important;\n"
+"            padding: 0 !important;\n"
+"            width: 100%% !important;\n"
+"        }\n"
+"\n"
+"        /* iOS BLUE LINKS */\n"
+"        a[x-apple-data-detectors] {\n"
+"            color: inherit !important;\n"
+"            text-decoration: none !important;\n"
+"            font-size: inherit !important;\n"
+"            font-family: inherit !important;\n"
+"            font-weight: inherit !important;\n"
+"            line-height: inherit !important;\n"
+"        }\n"
+"\n"
+"        /* MOBILE STYLES */\n"
+"        @media screen and (max-width:600px) {\n"
+"            h1 {\n"
+"                font-size: 32px !important;\n"
+"                line-height: 32px !important;\n"
+"            }\n"
+"        }\n"
+"\n"
+"        /* ANDROID CENTER FIX */\n"
+"        div[style*=\"margin: 16px 0;\"] {\n"
+"            margin: 0 !important;\n"
+"        }\n"
+"    </style>\n"
+"</head>\n"
+"\n"
+"<body style=\"background-color: #f4f4f4; margin: 0 !important; padding: 0 !"
+"important;\">\n"
+"    <!-- HIDDEN PREHEADER TEXT -->\n"
+"    <div\n"
+"        style=\"display: none; font-size: 1px; color: #fefefe; line-height: "
+"1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-"
+"width: 0px; opacity: 0; overflow: hidden;\">\n"
+"    </div>\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%%"
+"\">\n"
+"        <!-- LOGO -->\n"
+"        <tr>\n"
+"            <td bgcolor=\"#C4183C\" align=\"center\" style=\"padding: 0px "
+"10px 0px 10px;\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"100%%\" style=\"max-width: 600px;\">\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"center\" valign=\"top"
+"\"\n"
+"                            style=\"padding: 40px 20px 20px 20px; border-"
+"radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, "
+"Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; "
+"line-height: 48px;\">\n"
+"                            <h1 style=\"font-size: 48px; font-weight: 400; "
+"margin: 2;\">Welcome!</h1>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </td>\n"
+"        </tr>\n"
+"        <tr>\n"
+"            <td bgcolor=\"#f4f4f4\" align=\"center\" style=\"padding: 0px "
+"10px 0px 10px;\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"100%%\" style=\"max-width: 600px;\">\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 20px 30px 40px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">You're receiving this e-"
+"mail because you or someone else has requested\n"
+"                                a password for your user account.\n"
+"                                It can be safely ignored if you did not "
+"request a password reset. Click the link below\n"
+"                                to reset your\n"
+"                                password.</p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\">\n"
+"                            <table width=\"100%%\" border=\"0\" cellspacing="
+"\"0\" cellpadding=\"0\">\n"
+"                                <tr>\n"
+"                                    <td bgcolor=\"#ffffff\" align=\"center\" "
+"style=\"padding: 20px 30px 60px 30px;\">\n"
+"                                        <table border=\"0\" cellspacing="
+"\"0\" cellpadding=\"0\">\n"
+"                                            <tr>\n"
+"                                                <td align=\"center\" style="
+"\"border-radius: 3px;\" bgcolor=\"#C4183C\"><a\n"
+"                                                        href="
+"\"%(password_reset_url)s\" target=\"_blank\"\n"
+"                                                        style=\"font-size: "
+"20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-"
+"decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; "
+"border-radius: 2px; border: 1px solid #C4183C; display: inline-block;"
+"\">Reset\n"
+"                                                        Password</a></td>\n"
+"                                            </tr>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr> <!-- COPY -->\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 0px 30px 0px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">If that doesn't work, "
+"copy and paste the following link in your\n"
+"                                browser:</p>\n"
+"                        </td>\n"
+"                    </tr> <!-- COPY -->\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 20px 30px 20px 30px; color: "
+"#666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; "
+"font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\"><a href="
+"\"%(password_reset_url)s\" target=\"_blank\"\n"
+"                                    style=\"color: #C4183C;\">"
+"%(password_reset_url)s</a></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td bgcolor=\"#ffffff\" align=\"left\"\n"
+"                            style=\"padding: 0px 30px 40px 30px; border-"
+"radius: 0px 0px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, "
+"Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;\">\n"
+"                            <p style=\"margin: 0;\">From<br>%(site_name)s "
+"Team</p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </td>\n"
+"        </tr>\n"
+"    </table>\n"
+"</body>\n"
+"\n"
+"</html>\n"
+msgstr ""
+
+#: templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "إعادة تعيين كلمة المرور البريد الإلكتروني"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:12
+msgid "Confirm E-mail Address"
+msgstr "تأكيد عنوان البريد"
+
+#: templates/account/email_confirm.html:18
+#, python-format
+msgid ""
+"Please confirm that <a\n"
+"            href=\"mailto:%(email)s\">%(email)s</a> is an e-mail address for "
+"user\n"
+"        %(user_display)s."
+msgstr ""
+
+#: templates/account/email_confirm.html:24
+msgid "Confirm"
+msgstr "يتأكد"
+
+#: templates/account/email_confirm.html:31
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new\n"
+"            e-mail confirmation request</a>."
+msgstr ""
+
+#: templates/account/login.html:7 templates/account/login.html:15
+#: templates/account/login.html:46 templates/includes/navbar.html:57
+msgid "Sign In"
+msgstr "تسجيل الدخول"
+
+#: templates/account/login.html:20
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"            of your existing third party accounts. Or, <a href="
+"\"%(signup_url)s\">sign up</a>\n"
+"            for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: templates/account/login.html:24
+msgid "Continue With"
+msgstr "تواصل مع"
+
+#: templates/account/login.html:28
+msgid "or"
+msgstr "أو"
+
+#: templates/account/login.html:35
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"            <a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+
+#: templates/account/login.html:45
+msgid "Forgot Password?"
+msgstr "هل نسيت كلمة السر"
+
+#: templates/account/logout.html:5 templates/account/logout.html:12
+#: templates/includes/navbar.html:50
+msgid "Sign Out"
+msgstr "خروج"
+
+#: templates/account/logout.html:6
+msgid "Are you sure you want to sign out?"
+msgstr "هل أنت متأكد أنك تريد الخروج؟"
+
+#: templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "لا يمكنك إزالة عنوان البريد الإلكتروني الأساسي الخاص بك"
+
+#: templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "تم إرسال بريد التأكيد الإلكتروني إلى %(email)"
+
+#: templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr ""
+
+#: templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr ""
+
+#: templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr ""
+
+#: templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr ""
+
+#: templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr ""
+
+#: templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr ""
+
+#: templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr ""
+
+#: templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr ""
+
+#: templates/account/password_change.html:5
+#: templates/account/password_change.html:12
+#: templates/account/password_change.html:17
+#: templates/account/password_reset_from_key.html:5
+#: templates/account/password_reset_from_key.html:12
+#: templates/account/password_reset_from_key_done.html:4
+#: templates/account/password_reset_from_key_done.html:8
+#: templates/users/settings.html:27
+msgid "Change Password"
+msgstr "تغيير كلمة المرور"
+
+#: templates/account/password_reset.html:3
+#: templates/account/password_reset.html:9
+#: templates/account/password_reset_done.html:6
+#: templates/account/password_reset_done.html:10
+msgid "Password Reset"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: templates/account/password_reset.html:13
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"هل نسيت كلمة مرورك؟ أدخل عنوان بريدك الإلكتروني أدناه ، وسنرسل لك بريدًا "
+"إلكترونيًا يتيح لك إعادة تعيينه"
+
+#: templates/account/password_reset.html:19
+msgid "Reset My Password"
+msgstr "إعادة تعيين كلمة المرور الخاصة بي"
+
+#: templates/account/password_reset.html:23
+msgid ""
+"Please contact us if you have any trouble resetting\n"
+"          your password."
+msgstr ""
+
+#: templates/account/password_reset_done.html:16
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few\n"
+"        minutes."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:12
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:16
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please\n"
+"          request a <a href=\"%(passwd_reset_url)s\">new password reset</a>."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:23
+msgid "change password"
+msgstr "تغيير كلمة المرور"
+
+#: templates/account/password_reset_from_key.html:26
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr ""
+
+#: templates/account/password_set.html:6 templates/account/password_set.html:13
+#: templates/account/password_set.html:17
+msgid "Set Password"
+msgstr "ضبط كلمة السر"
+
+#: templates/account/signup.html:4 templates/includes/footer.html:73
+#: templates/includes/navbar.html:63 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup.html:12 templates/account/signup.html:25
+#: templates/socialaccount/signup.html:14
+#: templates/socialaccount/signup.html:38
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:14
+#, python-format
+msgid ""
+"Already have an account? Then please\n"
+"            <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: templates/account/signup_closed.html:5
+#: templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: templates/account/snippets/already_logged_in.html:5
+msgid "Note"
+msgstr ""
+
+#: templates/account/snippets/already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: templates/account/verification_sent.html:4
+#: templates/account/verified_email_required.html:5
+#: templates/account/verified_email_required.html:9
+msgid "Verify Your E-mail Address"
+msgstr "تحقق من عنوان بريدك الإلكتروني"
+
+#: templates/account/verification_sent.html:7
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do\n"
+"    not receive it within a few minutes."
+msgstr ""
+
+#: templates/account/verified_email_required.html:13
+msgid ""
+"This part of the site requires us to verify that\n"
+"        you are who you claim to be. For this purpose, we require that you\n"
+"        verify ownership of your e-mail address. "
+msgstr ""
+
+#: templates/account/verified_email_required.html:17
+msgid ""
+"We have sent an e-mail to you for\n"
+"        verification. Please click on the link inside this e-mail. Please\n"
+"        contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: templates/account/verified_email_required.html:21
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail\n"
+"            address</a>."
+msgstr ""
+
+#: templates/core/contact.html:25
+msgid "Email"
+msgstr "بريد الالكتروني"
+
+#: templates/core/contact.html:33 users/forms.py:11 users/forms.py:12
+#: users/forms.py:37 users/forms.py:38
+msgid "Phone No."
+msgstr "رقم الهاتف"
+
+#: templates/core/contact.html:41 users/forms.py:52 users/models.py:40
+msgid "Address"
+msgstr "عنوان"
+
+#: templates/core/index.html:78
+msgid "Other"
+msgstr "آخر"
+
+#: templates/core/index.html:109 templates/shop/category_items.html:27
+msgid "Filter"
+msgstr "منقي"
+
+#: templates/core/index.html:112
+msgid "Explore Items"
+msgstr "اكتشف العناصر"
+
+#: templates/core/index.html:121 templates/shop/category_items.html:37
+#: templates/shop/item_detail.html:41 templates/shop/item_detail.html:90
+msgid "Discount"
+msgstr "خصم"
+
+#: templates/core/index.html:124 templates/shop/category_items.html:40
+#: templates/shop/item_detail.html:38 templates/shop/item_detail.html:93
+msgid "Out of Stock"
+msgstr "إنتهى من المخزن"
+
+#: templates/core/index.html:137 templates/shop/category_items.html:53
+#: templates/shop/item_detail.html:106
+msgid "Details"
+msgstr "تفاصيل"
+
+#: templates/core/index.html:142 templates/shop/category_items.html:58
+#: templates/shop/item_detail.html:111
+msgid "No Items to Show"
+msgstr "لا توجد عناصر للعرض"
+
+#: templates/includes/footer.html:69
+msgid "Signup Now"
+msgstr "أفتح حساب الأن"
+
+#: templates/includes/footer.html:80
+msgid "Copyright"
+msgstr "حقوق النشر"
+
+#: templates/includes/navbar.html:24
+msgid "Home"
+msgstr "الأساسية"
+
+#: templates/includes/navbar.html:35 templates/shop/user_orders.html:7
+msgid "My Orders"
+msgstr "حجوزاتي"
+
+#: templates/includes/navbar.html:46 users/views.py:19
+msgid "Settings"
+msgstr "إعدادات"
+
+#: templates/shop/cart.html:15
+msgid "Price"
+msgstr "سعر"
+
+#: templates/shop/cart.html:16
+msgid "Quantity"
+msgstr "كمية"
+
+#: templates/shop/cart.html:17
+msgid "Total Price"
+msgstr "السعر الكلي"
+
+#: templates/shop/cart.html:18
+msgid "Delete"
+msgstr "حذف"
+
+#: templates/shop/cart.html:37
+msgid "Saving"
+msgstr "إنقاذ"
+
+#: templates/shop/cart.html:53
+msgid "Coupon"
+msgstr "قسيمة"
+
+#: templates/shop/cart.html:56 templates/shop/order_summary_snippet.html:27
+msgid "Coupon Expired"
+msgstr "الكوبون منتهي الصلاحية"
+
+#: templates/shop/cart.html:69
+msgid "Order Total"
+msgstr "الطلب الكلي"
+
+#: templates/shop/cart.html:84
+msgid "Apply"
+msgstr "تطبيق"
+
+#: templates/shop/cart.html:92
+msgid "Proceed to checkout"
+msgstr "باشرالخروج من الفندق"
+
+#: templates/shop/cart.html:93
+msgid "Continue shopping"
+msgstr "مواصلة التسوق"
+
+#: templates/shop/cart.html:100
+msgid "Your Cart is Empty!"
+msgstr "عربة التسوق فارغة"
+
+#: templates/shop/cart.html:102
+msgid ""
+"Before proceed to checkout you must add some items to your shopping cart."
+msgstr ""
+"قبل الشروع في الخروج ، يجب عليك إضافة بعض العناصر إلى عربة التسوق الخاصة بك"
+
+#: templates/shop/cart.html:104
+msgid "Return to Home Page"
+msgstr "ارجع للصفحة الرئيسية"
+
+#: templates/shop/checkout.html:14
+msgid "Proceed to payment"
+msgstr "الشروع في دفع"
+
+#: templates/shop/item_detail.html:62
+#, fuzzy
+#| msgid "Quantity"
+msgid "Quantity Left"
+msgstr "الكمية المتبقية"
+
+#: templates/shop/item_detail.html:68 templates/shop/item_detail.html:73
+msgid "Add to cart"
+msgstr "أضف إلى السلة"
+
+#: templates/shop/item_detail.html:81
+msgid "Related Items"
+msgstr "الأصناف ذات الصلة"
+
+#: templates/shop/order_summary_snippet.html:5
+msgid "Your Cart"
+msgstr "عربتك"
+
+#: templates/shop/order_summary_snippet.html:34
+msgid "Total (USD)"
+msgstr "الإجمالي (بالدولار الأمريكي)"
+
+#: templates/shop/payment_successful.html:11
+msgid "Return to Home"
+msgstr "العودة إلى الرئيسية"
+
+#: templates/shop/user_orders.html:13
+msgid "Order ID"
+msgstr "رقم التعريف الخاص بالطلب"
+
+#: templates/shop/user_orders.html:14
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#: templates/shop/user_orders.html:15
+msgid "Onway To Delivery"
+msgstr "في الطريق للتسليم"
+
+#: templates/shop/user_orders.html:16
+msgid "Delivered"
+msgstr "تم التوصيل"
+
+#: templates/shop/user_orders.html:17
+msgid "Order Date"
+msgstr "تاريخ الحجز"
+
+#: templates/shop/user_orders.html:50
+msgid "You didn't ordered anything yet."
+msgstr "أنت لم تطلب أي شيء بعد."
+
+#: templates/socialaccount/authentication_error.html:5
+#: templates/socialaccount/authentication_error.html:8
+msgid "Social Network Login Failure"
+msgstr ""
+
+#: templates/socialaccount/authentication_error.html:10
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr "حدث خطأ أثناء محاولة تسجيل الدخول عبر حساب الشبكة الاجتماعية الخاص بك"
+
+#: templates/socialaccount/connections.html:5
+#: templates/socialaccount/connections.html:9
+msgid "Account Connections"
+msgstr "اتصالات الحساب"
+
+#: templates/socialaccount/connections.html:12
+msgid ""
+"You can sign in to your account using any of the following third party\n"
+"        accounts:"
+msgstr ""
+
+#: templates/socialaccount/connections.html:48
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+
+#: templates/socialaccount/connections.html:51
+msgid "Add a 3rd Party Account"
+msgstr "أضف حساب طرف ثالث"
+
+#: templates/socialaccount/login_cancelled.html:5
+#: templates/socialaccount/login_cancelled.html:9
+msgid "Login Cancelled"
+msgstr ""
+
+#: templates/socialaccount/login_cancelled.html:13
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr ""
+
+#: templates/socialaccount/messages/account_connected.txt:2
+msgid "The social account has been connected."
+msgstr ""
+
+#: templates/socialaccount/messages/account_connected_other.txt:2
+msgid "The social account is already connected to a different account."
+msgstr ""
+
+#: templates/socialaccount/messages/account_disconnected.txt:2
+msgid "The social account has been disconnected."
+msgstr ""
+
+#: templates/socialaccount/signup.html:16
+#, python-format
+msgid ""
+"You are about to use your\n"
+"            %(provider_name)s account to login to\n"
+"            %(site_name)s. As a final step, please complete the following "
+"form:"
+msgstr ""
+
+#: templates/users/delete_account.html:9 templates/users/delete_account.html:13
+#: templates/users/settings.html:40 users/views.py:83
+msgid "Delete Account"
+msgstr "حذف الحساب"
+
+#: templates/users/edit_phone_no.html:9 templates/users/edit_phone_no.html:13
+#: users/views.py:29 users/views.py:30
+msgid "Edit Phone No."
+msgstr "تعديل رقم الهاتف"
+
+#: templates/users/settings.html:13
+#: templates/users/update_profile_picture.html:11
+#: templates/users/update_profile_picture.html:22 users/views.py:54
+msgid "Update Profile Picture"
+msgstr "تحديث صورة الملف الشخصي"
+
+#: templates/users/settings.html:21
+msgid "Edit"
+msgstr "تعديل"
+
+#: templates/users/settings.html:31
+msgid "Email Management"
+msgstr "إدارة البريد الإلكتروني"
+
+#: templates/users/settings.html:35
+msgid "Social Account Connections"
+msgstr "اتصالات الحساب الاجتماعي"
+
+#: users/forms.py:42
+msgid "Profice Picture"
+msgstr "الصوره الشخصيه"
+
+#: users/forms.py:47 users/views.py:84
+msgid "Are you sure you want to delete your account?"
+msgstr "هل انت متأكد انك تريد حذف حسابك"
+
+#: users/forms.py:51
+msgid "Name"
+msgstr "اسم"
+
+#: users/models.py:25
+msgid "User Profile"
+msgstr ""
+
+#: users/models.py:26
+msgid "User Profiles"
+msgstr ""
+
+#: users/models.py:35
+msgid "Street Address"
+msgstr ""
+
+#: users/models.py:36
+msgid "Postal Code"
+msgstr ""
+
+#: users/models.py:37
+msgid "City"
+msgstr ""
+
+#: users/models.py:41
+msgid "Addresss"
+msgstr ""
+
+#: users/views.py:19
+msgid "User Settings"
+msgstr ""
+
+#: users/views.py:43
+msgid "Phone No. Updated"
+msgstr "رقم الهاتف محدث"
+
+#: users/views.py:61
+msgid "Profice Picture Updated"
+msgstr "تم تحديث صورة الملف الشخصي"
+
+#: users/views.py:77
+msgid "Your account has been deleted."
+msgstr "لقد تم حذف حسابك"
+
+#: users/views.py:80
+msgid "There was an error."
+msgstr "كان هناك خطأ"

@@ -1,0 +1,5 @@
+static_in_env/* linguist-vendored
+staticfiles/* linguist-vendored
+*.py linguist-vendored=false
+*.js linguist-vendored=true
+*.css linguist-vendored=true

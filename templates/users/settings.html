@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+{% load i18n %}
+{% block content %}
+<main>
+    <section class="my-5">
+        <h1>{{request.user.username}}</h1>
+        <div class="row">
+            <div class="order-lg-2 col-lg-4  d-flex flex-column justify-content-center align-items-center">
+                <img loading=lazy alt="" class="rounded" style="width: 250px;" src="{{request.user.profile.image.url}}">
+                <a href="{% url 'update_profile_picture' %}"
+                    class="btn btn-secondary mt-2">{% trans "Update Profile Picture" %}</a>
+            </div>
+            <div class="order-lg-1 col-lg-8">
+                <hr>
+                <p class="lead my-2">
+                    <i class="fas fa-phone mr-2"></i>
+                    {{request.user.profile.phone_no}}
+                    <a href="{% url 'edit_phone_no' %}" class="btn btn-warning btn-sm ml-2"><i class="fas fa-edit"></i>
+                        {% trans "Edit" %}</a>
+                </p>
+                <hr>
+                <div>
+                    <a href="{% url 'account_change_password' %}" class="btn btn-secondary m-1">
+                        <i class="fa fa-key"></i>
+                        {% trans "Change Password" %}
+                    </a>
+                    <a href="{% url 'account_email' %}" class="btn btn-secondary m-1">
+                        <i class="fa fa-envelope"></i>
+                        {% trans "Email Management" %}
+                    </a>
+                    <a href="{% url 'socialaccount_connections' %}" class="btn btn-secondary m-1">
+                        <i class="fab fa-google"></i>
+                        {% trans "Social Account Connections" %}
+                    </a>
+                    <hr>
+                    <a href="{% url 'delete_account' %}" class="btn btn-danger m-1">
+                        <i class="fas fa-trash"></i>
+                        {% trans "Delete Account" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

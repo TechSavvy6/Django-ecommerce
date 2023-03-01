@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load my_tags %}
+
+{% block content %}
+<section class="my-5">
+    <h2 class="mb-2">
+        <h1 class="my-5 h2 text-center">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+            {{category.name_en}}
+            {% elif LANGUAGE_CODE == 'ar' %}
+            {{ category.name_ar }}
+            {% endif %}
+        </h1>
+    </h2>
+    <form class="my-3">
+        <div class="row">
+            <div class="col-sm-6">
+                {{filtered_qs_form.price__gt|as_crispy_field}}
+            </div>
+            <div class="col-sm-6">
+                {{filtered_qs_form.price__lt|as_crispy_field}}
+            </div>
+        </div>
+        <button class="btn btn-danger" type="submit">{% trans "Filter" %}</button>
+    </form>
+    <div class="row">
+        {% for item in response %}
+        <div class="col-md-6 col-lg-4">
+            <div class="card my-2">
+                <img loading=lazy class="card-img-top" src="{{item.images.first.image.url}}"
+                    alt="{{item.images.first.image.name}}">
+                {% if item.is_available %}
+                {% if item.discount_price %}
+                <span class="badge bg-{{theme}}">{% trans "Discount" %} <i class="fas fa-tags"></i></span>
+                {% endif %}
+                {% else %}
+                <span class="badge bg-warning">{% trans "Out of Stock" %}</span>
+                {% endif %}
+                <div class="card-body">
+                    <h6 class="card-title">{{item.name}}</h6>
+                    <p class="text-{{theme}} mb-3">
+                        {% if item.discount_price %}
+                        <s class="text-dark"><i class="fas fa-dollar-sign mr-1"></i>{{item.price }}</s>
+                        <i class="fas fa-dollar-sign mr-1"></i>{{item.discount_price }}
+                        {% else %}
+                        <i class="fas fa-dollar-sign mr-1"></i>{{item.price }}
+                        {% endif %}
+                    </p>
+                    <a href="{{item.get_absolute_url}}"
+                        class="btn btn-{{theme}} btn-pill btn-sm">{% trans "Details" %}</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="col lead text-center">{% trans "No Items to Show" %}</p>
+        {% endfor %}
+    </div>
+</section>
+<nav class="row d-flex justify-content-center">
+    <ul class="pagination pagination-sm">
+        {% if response.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?{% url_replace page=response.previous_page_number %}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if response.number|add:'-2' > 1 %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=1 %}">1
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=response.number|add:'-3' %}">&hellip;
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% for i in response.paginator.page_range %}
+        {% if response.number == i %}
+        <li class="page-item active">
+            <a class="page-link" href="?{% url_replace page=i %}">{{i}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% elif i > response.number|add:'-3' and i < response.number|add:'3' %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=i %}">{{i}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% if response.paginator.num_pages > response.number|add:'2' %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=response.number|add:'3' %}">&hellip;
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link"
+                href="?{% url_replace page=response.paginator.num_pages %}">{{response.paginator.num_pages}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if response.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?{% url_replace page=response.next_page_number %}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock content %}

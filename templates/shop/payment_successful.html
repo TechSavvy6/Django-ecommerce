@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center flex-column my-5">
+    <h1 class="my-3">{% trans "Payment Successful" %}</h1>
+    <h2>
+        <div class="badge badge-success badge-lg">
+            <i class="fas fa-check"></i>
+        </div>
+    </h2>
+    <a href="{% url 'index' %}" class="btn btn-pill btn-{{theme}} my-3">{% trans "Return to Home" %}</a>
+</div>
+{% endblock content %}

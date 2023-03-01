@@ -1,0 +1,40 @@
+{% load static %}
+{% load i18n %}
+{% load meta %}
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{LANGUAGE_CODE}}">
+
+<head {% meta_namespaces %}>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="{{request.path}}" />
+  {% include 'meta/meta.html' %}
+  <link rel="apple-touch-icon" sizes="120x120" href="{% static 'icon/shopaza_line.png' %}" />
+  <link rel="icon" href="{% static 'icon/shopaza_line.png' %}" />
+  <link rel="shortcut icon" type="image/png" href="{% static 'icon/shopaza_line.png' %}" />
+  <meta name="msapplication-TileColor" content="#0648B3">
+  <meta name="theme-color" content="#0648B3">
+  <title>{% block head_title %}{% endblock head_title %}</title>
+
+  {% include 'includes/styles.html' %}
+  {% include 'includes/scripts.html' %}
+</head>
+
+<body class="bg-image">
+  {%include 'includes/preloader.html' %}
+
+  {% include 'includes/navbar.html' %}
+  {% include 'includes/alerts.html' %}
+
+  {% block no_container_content %}{% endblock no_container_content %}
+
+  <div class="container">
+    {% block content %}{% endblock content %}
+  </div>
+
+  {% include 'includes/footer.html' %}
+</body>
+
+</html>

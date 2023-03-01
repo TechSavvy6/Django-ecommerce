@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+
+{% load i18n %}
+{% block content %}
+<div class="mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 ml-auto mr-auto">
+            <div class="card p-5">
+                <h2>{% trans "Update Profile Picture" %}</h2>
+
+                <form method="POST" enctype="multipart/form-data" action="{% url 'update_profile_picture' %}" class="">
+                    {% csrf_token %}
+                    <div class="form-group mt-2">
+                        <div class="custom-file">
+                            {% crispy_field form.profile_picture 'class' 'custom-file-input' %}
+                            <label class="custom-file-label" for="{{ form.profile_picture.id_for_label }}">{{ form.profile_picture.label }}</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-{{theme}}" type="submit"
+                        name="action">{% trans "Update Profile Picture" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

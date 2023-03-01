@@ -1,0 +1,22 @@
+{% load static %}
+
+<!-- Core -->
+
+<script src="{% static 'js/jquery.slim.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/shards.min.js' %}"></script>
+
+<script>
+  $('#item_detail_carousel').carousel({
+    interval: 3000,
+    cycle: true
+  });
+</script>
+<script>
+  $(document).ready(function ($) {
+    $(".table-link-row").click(function () {
+      window.location = $(this).data("href");
+    });
+  });
+</script>

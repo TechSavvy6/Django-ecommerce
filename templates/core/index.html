@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% comment %} {% load humanize %} {% endcomment %}
+{% load my_tags %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block no_container_content %}
+<div class="bg-{{theme}} ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-left">
+                <h1 class="mt-5 text-white">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}
+                    {{title_en}}
+                    {% elif LANGUAGE_CODE == 'ar' %}
+                    {{ title_ar }}
+                    {% endif %}
+                </h1>
+                <p class="mb-5 lead text-white">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}
+                    {{description_en}}
+                    {% elif LANGUAGE_CODE == 'ar' %}
+                    {{ description_ar }}
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+                <img src="{% static 'svgs/web_shopping.svg' %}" alt="web_shopping.svg" style="width: 70%;"
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="{{theme_hex}}" fill-opacity="1"
+            d="M0,192L48,181.3C96,171,192,149,288,160C384,171,480,213,576,202.7C672,192,768,128,864,101.3C960,75,1056,85,1152,96C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+</div>
+{% endblock no_container_content %}
+{% block content %}
+<main>
+    <nav class="navbar bg-secondary navbar-expand-lg navbar-dark rounded">
+        <div class="container">
+            <a class="navbar-brand" href={% url 'index' %}>
+                {% trans "Categories" %}
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    {% for category in categories %}
+                    {% if forloop.counter < 8 %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{category.get_absolute_url}}">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% if LANGUAGE_CODE == 'en' %}
+                            {{category.name_en}}
+                            {% elif LANGUAGE_CODE == 'ar' %}
+                            {{ category.name_ar }}
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if categories.count >= 8 %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAuth" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {% trans "Other" %}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAuth">
+                            {% for category in categories %}
+                            {% if forloop.counter > 8 %}
+                            <a class="dropdown-item" href="{{category.get_absolute_url}}">
+                                {% get_current_language as LANGUAGE_CODE %}
+                                {% if LANGUAGE_CODE == 'en' %}
+                                {{category.name_en}}
+                                {% elif LANGUAGE_CODE == 'ar' %}
+                                {{ category.name_ar }}
+                                {% endif %}
+                            </a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form class="my-3">
+        <div class="row">
+            <div class="col-sm-6">
+                {{filtered_qs_form.price__gt|as_crispy_field}}
+            </div>
+            <div class="col-sm-6">
+                {{filtered_qs_form.price__lt|as_crispy_field}}
+            </div>
+        </div>
+        <button class="btn btn-danger" type="submit">{% trans "Filter" %}</button>
+    </form>
+    <section class="my-5">
+        <h2 class="mb-2">{% trans "Explore Items" %}</h2>
+        <div class="row">
+            {% for item in response %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-2">
+                    <img loading=lazy class="card-img-top" src="{{item.images.first.image.url}}"
+                        alt="{{item.images.first.image.name}}">
+                    {% if item.is_available %}
+                    {% if item.discount_price %}
+                    <span class="badge bg-{{theme}}">{% trans "Discount" %} <i class="fas fa-tags"></i></span>
+                    {% endif %}
+                    {% else %}
+                    <span class="badge bg-warning">{% trans "Out of Stock" %}</span>
+                    {% endif %}
+                    <div class="card-body">
+                        <h6 class="card-title">{{item.name}}</h6>
+                        <p class="text-{{theme}} mb-3">
+                            {% if item.discount_price %}
+                            <s class="text-dark"><i class="fas fa-dollar-sign mr-1"></i>{{item.price }}</s>
+                            <i class="fas fa-dollar-sign mr-1"></i>{{item.discount_price }}
+                            {% else %}
+                            <i class="fas fa-dollar-sign mr-1"></i>{{item.price }}
+                            {% endif %}
+                        </p>
+                        <a href="{{item.get_absolute_url}}"
+                            class="btn btn-{{theme}} btn-pill btn-sm">{% trans "Details" %}</a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="col lead text-center">{% trans "No Items to Show" %}</p>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+<nav class="row d-flex justify-content-center">
+    <ul class="pagination pagination-sm">
+        {% if response.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?{% url_replace page=response.previous_page_number %}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if response.number|add:'-2' > 1 %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=1 %}">1
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=response.number|add:'-3' %}">&hellip;
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% for i in response.paginator.page_range %}
+        {% if response.number == i %}
+        <li class="page-item active">
+            <a class="page-link" href="?{% url_replace page=i %}">{{i}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% elif i > response.number|add:'-3' and i < response.number|add:'3' %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=i %}">{{i}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% if response.paginator.num_pages > response.number|add:'2' %}
+        <li class="page-item ">
+            <a class="page-link" href="?{% url_replace page=response.number|add:'3' %}">&hellip;
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link"
+                href="?{% url_replace page=response.paginator.num_pages %}">{{response.paginator.num_pages}}
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if response.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?{% url_replace page=response.next_page_number %}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock content %}

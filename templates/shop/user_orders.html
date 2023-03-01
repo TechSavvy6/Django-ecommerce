@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% load humanize %}
+{% block content %}
+<main class="my-5">
+    <h1 class="h2">{% trans "My Orders" %}</h1>
+    {% if orders %}
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-nowrap" scope="col">{% trans "Order ID" %}</th>
+                    <th class="text-nowrap" scope="col">{% trans "Total Amount" %}</th>
+                    <th class="text-nowrap" scope="col">{% trans "Onway To Delivery" %}</th>
+                    <th class="text-nowrap" scope="col">{% trans "Delivered" %}</th>
+                    <th class="text-nowrap" scope="col">{% trans "Order Date" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>
+                        {{order.ref_code}}
+                    </td>
+                    <td><i class="fas fa-dollar-sign mr-1"></i>{{order.get_total|intcomma}}</td>
+                    <td>
+                        {% if order.being_delivered %}
+                        <i class="fas fa-check text-{{theme}}"></i>
+                        {% else %}
+                        <i class="fas fa-times text-{{theme}}"></i>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if order.received %}
+                        <i class="fas fa-check text-{{theme}}"></i>
+                        {% else %}
+                        <i class="fas fa-times text-{{theme}}"></i>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {{order.ordered_date|date:"F d, Y"}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <p class="lead my-3">{% trans "You didn't ordered anything yet." %}</p>
+    {% endif %}
+</main>
+{% endblock content %}
